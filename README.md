@@ -15,7 +15,7 @@ the technologies covered in the lectures.
 
 Your program should receive in input a gzipped [WARC
 file](https://en.wikipedia.org/wiki/Web_ARChive), and returns in output a
-three-column tab-separated file with document IDs, entity surface forms (like
+three-column tab-separated file with document IDs (i.e., the content of the field 'WARC-Record-ID'), entity surface forms (like
 "Berlin"), and Freebase entity IDs (like "/m/03hrz"). There is a sample file of
 the input (warc) and output (tsv) formats in the `data` directory. Your
 program must be runnable on the [DAS-4 cluster](https://www.cs.vu.nl/das4/)
@@ -79,15 +79,6 @@ string. The elasticsearch server can be started on a DAS-4 node with the
 commands shown in the file start_elasticsearch_server.sh. Once the server is
 started, it can be accessed from the command line like this: `curl
 "http://<host>:9200/freebase/label/_search?q=obama"` . 
-
-Below is a short description of the scripts provided in the folder:
-
-* 'starter-code.py'. 
-* 'start_sparql_server.sh'. 
-* 'start_elasticsearch_server.sh'. 
-* 'sparql.py'. 
-* 'score.py'. 
-* 'elasticsearch.py'. 
 
 # Frequently Asked Questions
 
